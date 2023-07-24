@@ -21,4 +21,4 @@ jobs:
           git commit -m “Mirror”
           git remote add Bitbucket https://${{ secrets.USER_NAME }}:${{ secrets.TOKEN }}@bitbucket.org/wynntils/reference
           git fetch --unshallow
-          git push -f Bitbucket master
+          git push -f Bitbucket main
