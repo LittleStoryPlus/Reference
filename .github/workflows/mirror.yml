@@ -19,6 +19,6 @@ jobs:
           git config --global push.default simple
           git add .
           git commit -m “Mirror”
-          git remote add Bitbucket https://${{ secrets.USER_NAME }}:${{ secrets.TOKEN }}@bitbucket.org/wynntils/reference
+          git remote add gitea https://${{ secrets.USER_NAME }}:${{ secrets.TOKEN }}@gitea.com/wuki/reference
           git fetch --unshallow
-          git push -f Bitbucket main
+          git push -f gitea main
