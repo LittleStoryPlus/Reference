@@ -20,5 +20,5 @@ jobs:
           git add .
           git commit -m “Mirror”
           git remote add gitea https://${{ secrets.USER_NAME }}:${{ secrets.TOKEN }}@gitea.com/wuki/reference
-          #git fetch --unshallow
-          git push -f gitea HEAD:main
+          git fetch --unshallow
+          git push -f gitea main
